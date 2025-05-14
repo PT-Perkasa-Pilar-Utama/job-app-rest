@@ -1,0 +1,27 @@
+{
+  "name": "job-app-rest",
+  "description": "Simple job application system REST API to be used for MCP demo.",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "start": "bun run src/index.ts",
+    "migrate": "bun run src/db/migrate.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/jsonwebtoken": "^9.0.9"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.5.0",
+    "bcryptjs": "^3.0.2",
+    "drizzle-orm": "^0.43.1",
+    "hono": "^4.7.9",
+    "jsonwebtoken": "^9.0.2",
+    "zod": "^3.24.4"
+  }
+}
