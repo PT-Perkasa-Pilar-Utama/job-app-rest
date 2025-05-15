@@ -1,0 +1,13 @@
+{
+  "name": "job-app-rest",
+  "script": "index.ts",
+  "interpreter": "bun",
+  "cwd": "./",
+  "exec_mode": "fork",
+  "autorestart": true,
+  "watch": false,
+  "env_file": ".env",
+  "env": {
+    "PATH": "$HOME/.bun/bin:$PATH"
+  }
+}
