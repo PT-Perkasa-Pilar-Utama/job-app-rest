@@ -1,0 +1,633 @@
+type: collection.insomnia.rest/5.0
+name: JOB-APP-REST
+meta:
+  id: wrk_3ff5d24476c74d3292c478dd43a69a80
+  created: 1747280232480
+  modified: 1747290376864
+collection:
+  - name: Users
+    meta:
+      id: fld_4496a1233b904047afd559b17e4e76b4
+      created: 1747283745778
+      modified: 1747283861132
+      sortKey: -1747283745778
+    children:
+      - url: http://localhost:4323/api/users
+        name: "[Admin] List users"
+        meta:
+          id: req_aa8190ad2e964474a9ff2acda576d8d7
+          created: 1747281778795
+          modified: 1747283841955
+          isPrivate: false
+          sortKey: -1747283791086
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{{ _.token }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4323/api/users/bd9918ac-2274-4485-a767-1f44081c2ba3
+        name: "[Admin] Specific user"
+        meta:
+          id: req_58b4ff36e9b24bc8a59c4f05ee18c861
+          created: 1747281945422
+          modified: 1747283803198
+          isPrivate: false
+          sortKey: -1747283791111
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{{ _.token }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4323/api/users
+        name: "[Admin] Register user"
+        meta:
+          id: req_e17f80f2a9b8444b922e4d3a9cdeb7a5
+          created: 1747282019760
+          modified: 1747283822965
+          isPrivate: false
+          sortKey: -1747283791211
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"email": "test2@ppu.co.id",
+            	"name": "Fake Dinar",
+            	"password": "test123"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{{ _.token }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4323/api/users/1ac0f6f7-2ddf-41c6-8788-5bf405c08575
+        name: "[Admin] Edit user"
+        meta:
+          id: req_a4ef45e8a43e42d89fa9e5a926f8d620
+          created: 1747282136022
+          modified: 1747283825971
+          isPrivate: false
+          sortKey: -1747283791311
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"email": "test@ppu.co.id",
+            	"name": "Dinar Islami",
+            	"password": "test123"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{{ _.token }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4323/api/users/22ea4da2-db08-4711-ab58-697b70283c93
+        name: "[Admin] Delete user"
+        meta:
+          id: req_e088ebd391c64f55868cbc26ccb9aa25
+          created: 1747282322742
+          modified: 1747283828854
+          isPrivate: false
+          sortKey: -1747283791411
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{{ _.token }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4323/api/users/1ac0f6f7-2ddf-41c6-8788-5bf405c08575
+        name: "[User] Self user"
+        meta:
+          id: req_2a804d1164fa4b0398f6be1e60fd324a
+          created: 1747282518697
+          modified: 1747283836627
+          isPrivate: false
+          sortKey: -1747283791061
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{{ _.token_user }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4323/api/users/1ac0f6f7-2ddf-41c6-8788-5bf405c08575
+        name: "[User] Edit self"
+        meta:
+          id: req_f0132f4555e54ceeb33466882090abec
+          created: 1747282661970
+          modified: 1747283839007
+          isPrivate: false
+          sortKey: -1747283791036
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"email": "test@ppu.co.id",
+            	"name": "Sir Dinar Islami",
+            	"password": "test123"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{{ _.token_user }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: General
+    meta:
+      id: fld_9d9ded3764ea49e798e0b69162795b4c
+      created: 1747283755987
+      modified: 1747283755987
+      sortKey: -1747283755987
+    children:
+      - url: http://localhost:4323/health
+        name: "[Public] Health"
+        meta:
+          id: req_d054f7ec86fb4585801c351c41e0f930
+          created: 1747280239099
+          modified: 1747283775133
+          isPrivate: false
+          sortKey: -1747283772435
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4323/api/users/login
+        name: "[Public] Login"
+        meta:
+          id: req_dcbec7f41eeb4674951f05ab6663629d
+          created: 1747281627906
+          modified: 1747283777766
+          isPrivate: false
+          sortKey: -1747283772235
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"email": "test@ppu.co.id",
+            	"password": "test123"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4323/
+        name: "[Public] Index"
+        meta:
+          id: req_fd3fb27df83f4b8b9ecc29e3628d8a66
+          created: 1747282928790
+          modified: 1747283772406
+          isPrivate: false
+          sortKey: -1747283772335
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Jobs
+    meta:
+      id: fld_cfd4a0ccddfa4dc2bce1c9022c21a783
+      created: 1747283852581
+      modified: 1747284044224
+      sortKey: -1747089861417.2266
+    children:
+      - url: http://localhost:4323/api/jobs
+        name: "[Public] List Jobs"
+        meta:
+          id: req_3f642ca5d9824d57bddec7ff63154590
+          created: 1747280319761
+          modified: 1747283877387
+          isPrivate: false
+          sortKey: -1747283877327
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4323/api/jobs
+        name: "[Admin] Add Job"
+        meta:
+          id: req_b4eda5562f244783b2d16adb2adeb7f1
+          created: 1747282966369
+          modified: 1747290044588
+          isPrivate: false
+          sortKey: -1747283877427
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "type": "part-time",
+                "title": "Quality Assurance",
+                 "description": "Make sure everythings works!",
+                "company": "PT Berjaya Inovasi Global",
+                "location": "Kelapa Gading, Jakarta Utara",
+                "salary": "IDR 5.000.000"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{{ _.token }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4323/api/jobs/93c60921-4d91-4134-baa0-9686e9cdc9de
+        name: "[Public] Specific job"
+        meta:
+          id: req_e67febd6bc174ad19ce9a3435c3c57a9
+          created: 1747283473181
+          modified: 1747283892242
+          isPrivate: false
+          sortKey: -1747283877527
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4323/api/jobs/93c60921-4d91-4134-baa0-9686e9cdc9de
+        name: "[Admin] Edit Job"
+        meta:
+          id: req_8d09f6d14644407288fd381c2f00d9f0
+          created: 1747283552106
+          modified: 1747283894512
+          isPrivate: false
+          sortKey: -1747283877627
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: >-
+            {
+                "type": "full-time",
+                "title": "Data Analyst",
+                 "description": "Need fresh graduate data analyst who can do python, and common library for data processing such as pandas etc.",
+                "company": "PT Berjaya Inovasi Global",
+                "location": "Kelapa Gading, Jakarta Utara",
+                "salary": "IDR 5.500.000"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{{ _.token }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4323/api/jobs/eef7d647-93e7-4be6-88f8-dcd83c30a096
+        name: "[Admin] Delete Job"
+        meta:
+          id: req_af7763cf76394cff9ddfa3b589e76d3c
+          created: 1747283619433
+          modified: 1747283897087
+          isPrivate: false
+          sortKey: -1747283877727
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{{ _.token }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Applications
+    meta:
+      id: fld_c6d5d158c32a4acfaa6b85e2cb6e3dd9
+      created: 1747283919109
+      modified: 1747283937642
+      sortKey: -1746895977056.4531
+    children:
+      - url: http://localhost:4323/api/applications
+        name: "[Admin] List All Apps"
+        meta:
+          id: req_9b74d5b56471414ba115981c10a7c745
+          created: 1747284068215
+          modified: 1747284103566
+          isPrivate: false
+          sortKey: -1747284103466
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{{ _.token }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4323/api/applications
+        name: "[User] Apply"
+        meta:
+          id: req_41f728c1f5c443649a3e3612e86a8bdf
+          created: 1747284158093
+          modified: 1747290073386
+          isPrivate: false
+          sortKey: -1747284103566
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "jobId": "494029ec-554e-4b5c-ae10-896659b09537",
+                "coverLetter": "https://google.com",
+                "resume": "https://youtube.com"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{{ _.token_user }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4323/api/applications/43121810-dd50-458e-946c-5eff7ff2c35f
+        name: "[User] Self apps"
+        meta:
+          id: req_8b2668eb22504ad88447ead6270c0a16
+          created: 1747289249524
+          modified: 1747289282679
+          isPrivate: false
+          sortKey: -1747284103516
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{{ _.token_user }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4323/api/applications/43121810-dd50-458e-946c-5eff7ff2c35f
+        name: "[Admin] Specific app"
+        meta:
+          id: req_7b8f679e9f2c4a0183af61986b385096
+          created: 1747289313566
+          modified: 1747289327492
+          isPrivate: false
+          sortKey: -1747284103366
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{{ _.token }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4323/api/applications/43121810-dd50-458e-946c-5eff7ff2c35f
+        name: "[Admin] Edit app status"
+        meta:
+          id: req_14457d7f586147ce8842b9daae98e53b
+          created: 1747289673780
+          modified: 1747289917587
+          isPrivate: false
+          sortKey: -1747284103266
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "status": "reviewed"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{{ _.token }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4323/api/applications/43121810-dd50-458e-946c-5eff7ff2c35f
+        name: "[User] Edit app detail"
+        meta:
+          id: req_487458e8c0c64877aa4d79900ff652e0
+          created: 1747289911614
+          modified: 1747289964053
+          isPrivate: false
+          sortKey: -1747284103491
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "coverLetter": "www.facebook.com"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{{ _.token_user }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:4323/api/applications/43121810-dd50-458e-946c-5eff7ff2c35f
+        name: "[Admin] Delete app"
+        meta:
+          id: req_8828cc6cbd6843e6b92fa8e2c0842530
+          created: 1747290094066
+          modified: 1747290108113
+          isPrivate: false
+          sortKey: -1747283990496.5
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{{ _.token }}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_0945a874c0dece9862fafffea5473048a9d4bd53
+    created: 1747280232484
+    modified: 1747280232484
+environments:
+  name: Base Environment
+  meta:
+    id: env_0945a874c0dece9862fafffea5473048a9d4bd53
+    created: 1747280232483
+    modified: 1747282592842
+    isPrivate: false
+  data:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJiZDk5MThhYy0yMjc0LTQ0ODUtYTc2Ny0xZjQ0MDgxYzJiYTMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDcyODE3MzEsImV4cCI6MTc0Nzg4NjUzMX0.x6WrsZFZsoa328ZrVF6Q0oeTurZNpC3fAnxzQyLkBlI
+    token_user: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxYWMwZjZmNy0yZGRmLTQxYzYtODc4OC01YmY0MDVjMDg1NzUiLCJyb2xlIjoidXNlciIsImlhdCI6MTc0NzI4MjQ1OSwiZXhwIjoxNzQ3ODg3MjU5fQ.lkghkKS3l-IIJj7uJKkfcjzC5cwZi2Kk74UZsbyxdkc

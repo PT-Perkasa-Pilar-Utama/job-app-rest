@@ -7,11 +7,17 @@
   "scripts": {
     "dev": "bun run --hot src/index.ts",
     "start": "bun run src/index.ts",
-    "migrate": "bun run src/db/migrate.ts"
+    "migrate": "bun run src/db/migrate.ts",
+    "seed": "bun run src/db/seed.ts",
+    "install:migrator": "bun install -g drizzle-kit drizzle-orm",
+    "generate:migration": "bunx --bun drizzle-kit generate --dialect 'sqlite' --schema ./src/db/schema.ts",
+    "db:studio": "npx drizzle-kit studio --port 3000 --verbose"
   },
   "devDependencies": {
+    "@libsql/client": "^0.15.6",
     "@types/bun": "latest",
-    "@types/jsonwebtoken": "^9.0.9"
+    "@types/jsonwebtoken": "^9.0.9",
+    "drizzle-kit": "^0.31.1"
   },
   "peerDependencies": {
     "typescript": "^5"

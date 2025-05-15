@@ -19,6 +19,11 @@ applicationsRoute.post(
     const user = c.get("user") as { userId: string; role: string };
 
     try {
+      // Check permissions
+      if (user.role === "admin") {
+        return c.json({ error: "Forbidden: Admin cannot apply to a job" }, 403);
+      }
+
       // Check if job exists
       const job = await db.query.jobs.findFirst({
         where: eq(jobs.id, data.jobId),
@@ -168,6 +173,13 @@ applicationsRoute.patch(
       if (user.role !== "admin" && data.status) {
         return c.json(
           { error: "Forbidden: Only admins can update application status" },
+          403
+        );
+      }
+
+      if (user.role === "admin" && (data.coverLetter || data.resume)) {
+        return c.json(
+          { error: "Forbidden: Admin can only update the application status" },
           403
         );
       }

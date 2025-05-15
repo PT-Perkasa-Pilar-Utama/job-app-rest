@@ -1,0 +1,1171 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v11.1.0"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:4323/api/applications",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxYWMwZjZmNy0yZGRmLTQxYzYtODc4OC01YmY0MDVjMDg1NzUiLCJyb2xlIjoidXNlciIsImlhdCI6MTc0NzI4MjQ1OSwiZXhwIjoxNzQ3ODg3MjU5fQ.lkghkKS3l-IIJj7uJKkfcjzC5cwZi2Kk74UZsbyxdkc"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n    \"jobId\": \"494029ec-554e-4b5c-ae10-896659b09537\",\n    \"coverLetter\": \"https://google.com\",\n    \"resume\": \"https://youtube.com\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[User] Apply"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:4323/api/applications/43121810-dd50-458e-946c-5eff7ff2c35f",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxYWMwZjZmNy0yZGRmLTQxYzYtODc4OC01YmY0MDVjMDg1NzUiLCJyb2xlIjoidXNlciIsImlhdCI6MTc0NzI4MjQ1OSwiZXhwIjoxNzQ3ODg3MjU5fQ.lkghkKS3l-IIJj7uJKkfcjzC5cwZi2Kk74UZsbyxdkc"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[User] Self apps"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "PATCH",
+					"url": "http://localhost:4323/api/applications/43121810-dd50-458e-946c-5eff7ff2c35f",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxYWMwZjZmNy0yZGRmLTQxYzYtODc4OC01YmY0MDVjMDg1NzUiLCJyb2xlIjoidXNlciIsImlhdCI6MTc0NzI4MjQ1OSwiZXhwIjoxNzQ3ODg3MjU5fQ.lkghkKS3l-IIJj7uJKkfcjzC5cwZi2Kk74UZsbyxdkc"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n    \"coverLetter\": \"www.facebook.com\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[User] Edit app detail"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:4323/api/applications",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJiZDk5MThhYy0yMjc0LTQ0ODUtYTc2Ny0xZjQ0MDgxYzJiYTMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDcyODE3MzEsImV4cCI6MTc0Nzg4NjUzMX0.x6WrsZFZsoa328ZrVF6Q0oeTurZNpC3fAnxzQyLkBlI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[Admin] List All Apps"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:4323/api/applications/43121810-dd50-458e-946c-5eff7ff2c35f",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJiZDk5MThhYy0yMjc0LTQ0ODUtYTc2Ny0xZjQ0MDgxYzJiYTMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDcyODE3MzEsImV4cCI6MTc0Nzg4NjUzMX0.x6WrsZFZsoa328ZrVF6Q0oeTurZNpC3fAnxzQyLkBlI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[Admin] Specific app"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "PATCH",
+					"url": "http://localhost:4323/api/applications/43121810-dd50-458e-946c-5eff7ff2c35f",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJiZDk5MThhYy0yMjc0LTQ0ODUtYTc2Ny0xZjQ0MDgxYzJiYTMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDcyODE3MzEsImV4cCI6MTc0Nzg4NjUzMX0.x6WrsZFZsoa328ZrVF6Q0oeTurZNpC3fAnxzQyLkBlI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n    \"status\": \"reviewed\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[Admin] Edit app status"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:4323/api/applications/43121810-dd50-458e-946c-5eff7ff2c35f",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJiZDk5MThhYy0yMjc0LTQ0ODUtYTc2Ny0xZjQ0MDgxYzJiYTMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDcyODE3MzEsImV4cCI6MTc0Nzg4NjUzMX0.x6WrsZFZsoa328ZrVF6Q0oeTurZNpC3fAnxzQyLkBlI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[Admin] Delete app"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:4323/api/jobs/eef7d647-93e7-4be6-88f8-dcd83c30a096",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJiZDk5MThhYy0yMjc0LTQ0ODUtYTc2Ny0xZjQ0MDgxYzJiYTMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDcyODE3MzEsImV4cCI6MTc0Nzg4NjUzMX0.x6WrsZFZsoa328ZrVF6Q0oeTurZNpC3fAnxzQyLkBlI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[Admin] Delete Job"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "PATCH",
+					"url": "http://localhost:4323/api/jobs/93c60921-4d91-4134-baa0-9686e9cdc9de",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJiZDk5MThhYy0yMjc0LTQ0ODUtYTc2Ny0xZjQ0MDgxYzJiYTMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDcyODE3MzEsImV4cCI6MTc0Nzg4NjUzMX0.x6WrsZFZsoa328ZrVF6Q0oeTurZNpC3fAnxzQyLkBlI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n    \"type\": \"full-time\",\n    \"title\": \"Data Analyst\",\n     \"description\": \"Need fresh graduate data analyst who can do python, and common library for data processing such as pandas etc.\",\n    \"company\": \"PT Berjaya Inovasi Global\",\n    \"location\": \"Kelapa Gading, Jakarta Utara\",\n    \"salary\": \"IDR 5.500.000\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[Admin] Edit Job"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:4323/api/jobs/93c60921-4d91-4134-baa0-9686e9cdc9de",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[Public] Specific job"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:4323/api/jobs",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJiZDk5MThhYy0yMjc0LTQ0ODUtYTc2Ny0xZjQ0MDgxYzJiYTMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDcyODE3MzEsImV4cCI6MTc0Nzg4NjUzMX0.x6WrsZFZsoa328ZrVF6Q0oeTurZNpC3fAnxzQyLkBlI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n    \"type\": \"part-time\",\n    \"title\": \"Quality Assurance\",\n     \"description\": \"Make sure everythings works!\",\n    \"company\": \"PT Berjaya Inovasi Global\",\n    \"location\": \"Kelapa Gading, Jakarta Utara\",\n    \"salary\": \"IDR 5.000.000\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[Admin] Add Job"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:4323/api/jobs",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[Public] List Jobs"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:4323/api/users/22ea4da2-db08-4711-ab58-697b70283c93",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJiZDk5MThhYy0yMjc0LTQ0ODUtYTc2Ny0xZjQ0MDgxYzJiYTMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDcyODE3MzEsImV4cCI6MTc0Nzg4NjUzMX0.x6WrsZFZsoa328ZrVF6Q0oeTurZNpC3fAnxzQyLkBlI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[Admin] Delete user"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "PATCH",
+					"url": "http://localhost:4323/api/users/1ac0f6f7-2ddf-41c6-8788-5bf405c08575",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJiZDk5MThhYy0yMjc0LTQ0ODUtYTc2Ny0xZjQ0MDgxYzJiYTMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDcyODE3MzEsImV4cCI6MTc0Nzg4NjUzMX0.x6WrsZFZsoa328ZrVF6Q0oeTurZNpC3fAnxzQyLkBlI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"email\": \"test@ppu.co.id\",\n\t\"name\": \"Dinar Islami\",\n\t\"password\": \"test123\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[Admin] Edit user"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:4323/api/users",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJiZDk5MThhYy0yMjc0LTQ0ODUtYTc2Ny0xZjQ0MDgxYzJiYTMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDcyODE3MzEsImV4cCI6MTc0Nzg4NjUzMX0.x6WrsZFZsoa328ZrVF6Q0oeTurZNpC3fAnxzQyLkBlI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"email\": \"test2@ppu.co.id\",\n\t\"name\": \"Fake Dinar\",\n\t\"password\": \"test123\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[Admin] Register user"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:4323/api/users/bd9918ac-2274-4485-a767-1f44081c2ba3",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJiZDk5MThhYy0yMjc0LTQ0ODUtYTc2Ny0xZjQ0MDgxYzJiYTMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDcyODE3MzEsImV4cCI6MTc0Nzg4NjUzMX0.x6WrsZFZsoa328ZrVF6Q0oeTurZNpC3fAnxzQyLkBlI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[Admin] Specific user"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:4323/api/users",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJiZDk5MThhYy0yMjc0LTQ0ODUtYTc2Ny0xZjQ0MDgxYzJiYTMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDcyODE3MzEsImV4cCI6MTc0Nzg4NjUzMX0.x6WrsZFZsoa328ZrVF6Q0oeTurZNpC3fAnxzQyLkBlI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[Admin] List users"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:4323/api/users/1ac0f6f7-2ddf-41c6-8788-5bf405c08575",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxYWMwZjZmNy0yZGRmLTQxYzYtODc4OC01YmY0MDVjMDg1NzUiLCJyb2xlIjoidXNlciIsImlhdCI6MTc0NzI4MjQ1OSwiZXhwIjoxNzQ3ODg3MjU5fQ.lkghkKS3l-IIJj7uJKkfcjzC5cwZi2Kk74UZsbyxdkc"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[User] Self user"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "PATCH",
+					"url": "http://localhost:4323/api/users/1ac0f6f7-2ddf-41c6-8788-5bf405c08575",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxYWMwZjZmNy0yZGRmLTQxYzYtODc4OC01YmY0MDVjMDg1NzUiLCJyb2xlIjoidXNlciIsImlhdCI6MTc0NzI4MjQ1OSwiZXhwIjoxNzQ3ODg3MjU5fQ.lkghkKS3l-IIJj7uJKkfcjzC5cwZi2Kk74UZsbyxdkc"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"email\": \"test@ppu.co.id\",\n\t\"name\": \"Sir Dinar Islami\",\n\t\"password\": \"test123\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[User] Edit self"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:4323/health",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[Public] Health"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:4323/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[Public] Index"
+			},
+			{
+				"startedDateTime": "2025-05-15T06:26:35.568Z",
+				"time": 0,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:4323/api/users/login",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.1.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"email\": \"test@ppu.co.id\",\n\t\"password\": \"test123\"\n}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "[Public] Login"
+			}
+		]
+	}
+}

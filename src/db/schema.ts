@@ -1,6 +1,6 @@
+import { randomUUID } from "crypto";
 import { relations, type InferSelectModel } from "drizzle-orm";
 import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
-import { createId } from "../utils";
 
 // Users table
 export const users = sqliteTable("users", {
@@ -77,3 +77,7 @@ export const applicationsRelations = relations(applications, ({ one }) => ({
 export type User = InferSelectModel<typeof users>;
 export type Job = InferSelectModel<typeof jobs>;
 export type Application = InferSelectModel<typeof applications>;
+
+export function createId() {
+  return randomUUID();
+}

@@ -6,7 +6,7 @@ import { users } from "./schema";
 
 console.log("Running migrations...");
 
-migrate(db, { migrationsFolder: "./migrations" });
+migrate(db, { migrationsFolder: "./drizzle" });
 
 console.log("Migrations complete!");
 

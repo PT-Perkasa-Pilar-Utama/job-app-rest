@@ -6,7 +6,7 @@ import { jobs } from "../db/schema";
 import { authenticate, requireAdmin } from "../middleware/auth";
 import { JobSchema, JobUpdateSchema } from "../types";
 
-const jobsRoute = new Hono();
+const jobsRoute = new Hono({ strict: false });
 
 // Create job (admin only)
 jobsRoute.post(
