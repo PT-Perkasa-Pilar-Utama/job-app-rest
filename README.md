@@ -2,6 +2,9 @@
 
 Simple job application system REST API to be used for MCP demo.
 
+- `job-app-mcp`: https://github.com/PT-Perkasa-Pilar-Utama/job-app-mcp
+- `job-app-client`: https://github.com/PT-Perkasa-Pilar-Utama/job-app-client
+
 ## Pre-requisite
 
 ```bash
