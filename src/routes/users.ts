@@ -155,6 +155,13 @@ usersRoute.patch(
         data.password = await hashPassword(data.password);
       }
 
+      if (requestingUser.role !== "admin" && data.role) {
+        return c.json(
+          { error: "Forbidden: Only admin can change the role" },
+          403
+        );
+      }
+
       const updatedUser = await db
         .update(users)
         .set({
