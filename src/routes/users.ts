@@ -11,46 +11,40 @@ import { comparePassword, generateToken, hashPassword } from "../utils";
 const usersRoute = new Hono<{ Variables: Variables }>();
 
 // Register new user (admin only)
-usersRoute.post(
-  "/",
-  authenticate,
-  requireAdmin,
-  zValidator("json", UserSchema),
-  async (c) => {
-    const data = c.req.valid("json");
+usersRoute.post("/register", zValidator("json", UserSchema), async (c) => {
+  const data = c.req.valid("json");
 
-    try {
-      const existingUser = await db.query.users.findFirst({
-        where: eq(users.email, data.email),
-      });
+  try {
+    const existingUser = await db.query.users.findFirst({
+      where: eq(users.email, data.email),
+    });
 
-      if (existingUser) {
-        return c.json({ error: "User with this email already exists" }, 400);
-      }
-
-      const hashedPassword = await hashPassword(data.password);
-
-      const newUser = await db
-        .insert(users)
-        .values({
-          ...data,
-          password: hashedPassword,
-        })
-        .returning();
-
-      // Fix the type checking issue - make sure newUser[0] exists
-      if (newUser[0]) {
-        // Safely destructure the password field
-        const { password, ...userWithoutPassword } = newUser[0];
-        return c.json(userWithoutPassword, 201);
-      }
-
-      return c.json({ error: "Failed to create user" }, 500);
-    } catch (error) {
-      return c.json({ error: "Failed to create user" }, 500);
+    if (existingUser) {
+      return c.json({ error: "User with this email already exists" }, 400);
     }
+
+    const hashedPassword = await hashPassword(data.password);
+
+    const newUser = await db
+      .insert(users)
+      .values({
+        ...data,
+        password: hashedPassword,
+      })
+      .returning();
+
+    // Fix the type checking issue - make sure newUser[0] exists
+    if (newUser[0]) {
+      // Safely destructure the password field
+      const { password, ...userWithoutPassword } = newUser[0];
+      return c.json(userWithoutPassword, 201);
+    }
+
+    return c.json({ error: "Failed to create user" }, 500);
+  } catch (error) {
+    return c.json({ error: "Failed to create user" }, 500);
   }
-);
+});
 
 // Login
 usersRoute.post("/login", zValidator("json", LoginSchema), async (c) => {

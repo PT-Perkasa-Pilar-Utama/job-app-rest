@@ -58,8 +58,8 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: http://localhost:4323/api/users
-        name: "[Admin] Register user"
+      - url: http://localhost:4323/api/users/register
+        name: "[Public] Register user"
         meta:
           id: req_e17f80f2a9b8444b922e4d3a9cdeb7a5
           created: 1747282019760
@@ -80,9 +80,6 @@ collection:
             value: application/json
           - name: User-Agent
             value: insomnia/11.1.0
-        authentication:
-          type: bearer
-          token: "{{ _.token }}"
         settings:
           renderRequestBody: true
           encodeUrl: true

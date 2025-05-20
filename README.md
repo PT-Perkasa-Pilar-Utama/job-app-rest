@@ -49,7 +49,7 @@ pm2 logs job-app-rest
 ### Users
 
 - [Public] `POST` `/api/users/login` - Allows any public user to authenticate and obtain an access token for API usage.
-- [Admin] `POST` `/api/users` - Allows an administrator to create a new user account within the system.
+- [Public] `POST` `/api/users/register` - Allows any public user to create a new user account within the system.
 - [Admin] `GET` `/api/users` - Retrieves a comprehensive list of all registered user accounts in the system.
 - [Admin] `GET` `/api/users/{userId}` - Retrieves detailed information about a specific user account for administrative purposes.
 - [Admin] `PATCH` `/api/users/{userId}` - Enables an administrator to modify the profile details of a specific user account.
