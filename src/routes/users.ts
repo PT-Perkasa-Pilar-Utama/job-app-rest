@@ -29,6 +29,7 @@ usersRoute.post("/register", zValidator("json", UserSchema), async (c) => {
       .insert(users)
       .values({
         ...data,
+        role: "user",
         password: hashedPassword,
       })
       .returning();
