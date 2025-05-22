@@ -1,6 +1,6 @@
 {
   "name": "job-app-rest",
-  "script": "index.ts",
+  "script": "src/index.ts",
   "interpreter": "bun",
   "cwd": "./",
   "exec_mode": "fork",
